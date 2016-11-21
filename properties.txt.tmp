@@ -1,0 +1,9 @@
+# Database Connection
+database=
+dbUser=
+dbPass=
+
+# Server Setup
+port=
+host=
+debug=

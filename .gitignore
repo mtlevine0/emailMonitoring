@@ -87,3 +87,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Don't upload the properties file to GitHub!
+properties.txt
