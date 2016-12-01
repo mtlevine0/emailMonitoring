@@ -1,0 +1,1 @@
+select outgoingmessage.messageKey, outgoingmessage.outgoingTime, outgoingmessage.SLABreached, TIMESTAMPDIFF(SECOND, outgoingmessage.outgoingTime, incomingmessage.incomingTime) as diff from outgoingmessage, incomingmessage where outgoingmessage.messageKey=incomingmessage.messageKey;

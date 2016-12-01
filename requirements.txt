@@ -2,3 +2,4 @@ flask
 werkzeug
 peewee
 MySQL-python
+APScheduler==3.0.0

@@ -8,6 +8,9 @@ recieve_api = Blueprint('recieve_api', __name__)
 def incoming():
     
     messageKey = request.form["stripped-text"]
-    db.incomingMessage.create(messageKey=messageKey)
+    try:
+        db.incomingMessage.create(messageKey=messageKey)
+    except:
+        print("Failed to write incomingMessage to DB!")
     
     return "All is well!"

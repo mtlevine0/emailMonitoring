@@ -7,3 +7,18 @@ dbPass=
 port=
 host=
 debug=
+
+# Outgoing Messages
+sendDelay=
+
+# Timeout
+emailTimeout=20
+
+# SLA Interval
+SLAInterval=5
+
+# MailGun
+MailGunAPIKey=
+domain=
+fromAddress=
+toAddress=
