@@ -5,6 +5,11 @@ from flask import Flask, send_from_directory
 
 from routes import recieve
 import database as db
+import scheduler
+
+import logging
+
+logging.basicConfig(filename='112116.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
 
 app = Flask(__name__)
 
@@ -33,4 +38,4 @@ app.register_blueprint(recieve.recieve_api)
 
 if __name__ == '__main__':
     
-    app.run(debug=properties.d["debug"], host=properties.d["host"], port=PORT)
+    app.run(debug=properties.d["debug"], use_reloader=False, host=properties.d["host"], port=PORT)
